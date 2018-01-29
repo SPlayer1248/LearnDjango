@@ -3,8 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <title>Albums</title>
+    <!-- Loads the path to static files -->
+    {% load staticfiles %}
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">﻿
+    <link rel="stylesheet" type="text/css" href="{% static 'music/style.css' %}"/>
 </head>
 <body>
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+
+        <!-- Logo -->
+        <div class="navbar-header">
+            <a class=" navbar-brand" href="{% url 'music:index' %}">Krist</a>
+        </div>
+    </div>
+</nav>
 {% if all_albums %}
 <h3>Here are all my Albums:</h3>
 <ul>

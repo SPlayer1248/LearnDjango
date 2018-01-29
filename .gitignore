@@ -1,0 +1,5 @@
+# Created by .ignore support plugin (hsz.mobi)
+.idea/workspace.xml
+Pythonweb/__pycache__/
+music/__pycache__/
+music/migrations/__pycache__/
